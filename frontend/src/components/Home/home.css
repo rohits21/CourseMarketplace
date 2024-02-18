@@ -1,0 +1,93 @@
+.app-outer-container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.app-container{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    height: 100%;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.home{
+    height: 100vh;
+}
+
+.vector-graphics{
+    filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
+    animation: vectorAnimation 1s linear infinite alternate;
+}
+
+@keyframes vectorAnimation {
+
+    to{
+        transform: translateY(-10px);
+    }
+    
+}
+
+.brandsBanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.brandsBanner > svg{
+    color: white;
+    font-size: 3rem;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.brandsBanner >svg:hover{
+    color: rgb(255,221,0);
+}
+
+.container-2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2 video{
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    width: 60%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .container-2{
+        height: unset;
+    }
+
+    .container-2 video{
+        width: 100%;
+    }
+}
+
+
+.course{
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+    width: 250px;
+}
+
+.course:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+
+
+
